@@ -433,7 +433,7 @@ class trainer:
             )
             for g in generated_ids
         ]
-        return preds[0]
+        return preds #[0]
 
     def evaluate(self, test_df: pd.DataFrame, metrics: str = "rouge"):
         """
